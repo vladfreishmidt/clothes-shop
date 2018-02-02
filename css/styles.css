@@ -16,6 +16,14 @@ GENERAL
    max-width: 100%;
  }
 
+ .container {
+   max-width: 1024px;
+   margin: 0 auto;
+ }
+
+ .flex {
+   display: flex;
+ }
 
 
 /* ==========================
@@ -27,10 +35,7 @@ HEADER
  }
 
  .header-wrapper {
-   max-width: 960px;
    height: 60px;
-   margin: auto;
-   display: flex;
    justify-content: space-between;
    align-items: center;
  }
@@ -39,8 +44,13 @@ HEADER
  nav a {
    text-decoration: none;
    color: #707a7a;
-   padding: 1.2rem;
+   padding: 1.4rem 1.2rem;
    letter-spacing: 3px;
+ }
+
+ nav a:hover {
+   background-color: #eee;
+   color: #333;
  }
 
 
@@ -49,16 +59,18 @@ SHOWCASE SECTION
 ============================ */
 
 #showcase {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   background:
   linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
   url('../img/showcase-bg.jpeg') no-repeat center / cover;
-  height: 100vh;
   transition: .5s;
+}
+
+.showcase-wrapper {
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
  #showcase h1 {
@@ -93,21 +105,77 @@ SHOWCASE SECTION
 /* ==========================
 CATALOG SECTION
 ============================ */
+
  #catalog {
-   width: 100%;
+  width: 100%;
  }
+
+ #catalog .catalog-wrapper {
+   justify-content: space-between;
+   border-top: 1px solid #ccc;
+   border-bottom: 1px solid #ccc;
+ }
+
  #catalog h3 {
   font-size: 5rem;
   font-family: 'Zilla Slab Highlight', cursive;
   letter-spacing: 3px;
 }
-#catalog .catalog-wrapper {
-  display: flex;
-  max-width: 960px;
-  margin: auto;
-}
 
-#catalog .catalog-item {
-  width: 25%;
-  margin-right: 3rem;
-}
+  #catalog .catalog-item {
+   width: 30%;
+   text-align: center;
+  }
+
+  #catalog img {
+    max-width: 255px;
+    max-height: 340px;
+  }
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Media Queries
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+ @media(max-width: 768px) {
+
+   /* *******************
+   SHOWCASE SECTION
+   ******************** */
+  #showcase h1 {
+     font-size: 3.5rem;
+     letter-spacing: 3px;
+  }
+
+  #showcase h1::before {
+    text-shadow: 2px 2px 3px rgba(50, 50, 50, 1);
+    top: -37px;
+    left: 22%;
+    transform: rotate(0deg);
+  }
+
+  #showcase p {
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+  }
+
+  /* *******************
+  CATALOG SECTION
+  ******************** */
+    #catalog h3 {
+      font-size: 2.75rem;
+      letter-spacing: 2px;
+    }
+
+    #catalog .catalog-wrapper {
+      flex-direction: column;
+    }
+
+    #catalog .catalog-item {
+      width: 100%;
+    }
+
+ }
