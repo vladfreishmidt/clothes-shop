@@ -7,6 +7,7 @@
   <title>Forever Young | Welcome</title>
 <link href="https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight:400,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Miss+Fajardose" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -40,26 +41,32 @@
     <div class="catalog-wrapper container flex">
 
 <!-- ___________________________________________________________ -->
+      <!-- Catalog Item -->
       <div class="catalog-item">
-        <img src="img/item-4.jpg" alt="hoodie">
+        <!-- Price -->
+        <span class="catalog-item__price"><i class="fas fa-dollar-sign"></i>34</span>
+        <img src="img/item-4.jpg" class="item-image-main" alt="hoodie">
+        <img src="img/item-4-back.jpg" class="item-image-back" alt="hoodie">
         <div class="catalog-item__badge">
+          <!-- Item Name -->
           <h4 class="catalog-item__name">Pullover Hoodie</h4>
+          <!-- Item Description -->
           <p class="catalog-item__description">
             Polyester and cotton material. Long Sleeve,
             Kangaroo Pocket, Drawstring Hooded design.
-            Fabric has some stretch.
           </p>
-          <span class="catalog-item__price">$34</span>
-          <a href="#">buy</a>
+          <!-- Buy Button -->
+          <a href="" class="catalog-item__buy-btn" title="Add to cart"><i class="fas fa-cart-arrow-down"></i> buy now</a>
+          <!-- Like Button -->
           <input type="checkbox" id="like" name="liked" value="liked">
-          <label for="like"><img src="" alt=""></label>
-
+          <label for="like" title="Like it!"><i class="fa fa-heart"></i></label>
         </div>
       </div>
 
 <!-- ___________________________________________________________ -->
       <div class="catalog-item">
         <img src="img/item-2.jpg" alt="hoodie">
+        <div class="catalog-item__badge">
         <h4 class="catalog-item__name">Pullover Hoodie</h4>
         <p class="catalog-item__description">
           Polyester and cotton material. Long Sleeve,
@@ -67,6 +74,7 @@
           Fabric has some stretch.
         </p>
         <span class="catalog-item__price">$34</span>
+        </div>
       </div>
 
 <!-- ___________________________________________________________ -->
@@ -119,5 +127,12 @@
 <!-- ___________________________________________________________ -->
     </div>
   </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-wrapper container flex">
+      <p>Designed and Coded by <a href="#">Vlad Freishmidt</a> &copy; 2018</p>
+    </div>
+  </footer>
 </body>
 </html>
