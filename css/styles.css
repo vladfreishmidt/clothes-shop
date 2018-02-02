@@ -24,7 +24,7 @@ GENERAL
  .flex {
    display: flex;
  }
-
+ .sale-badge
 
 /* ==========================
 HEADER
@@ -96,6 +96,7 @@ SHOWCASE SECTION
 #showcase p {
   color: #fff;
   font-size: 2rem;
+  font-weight: ;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 5px;
 }
@@ -112,8 +113,7 @@ CATALOG SECTION
 
  #catalog .catalog-wrapper {
    justify-content: space-between;
-   border-top: 1px solid #ccc;
-   border-bottom: 1px solid #ccc;
+   flex-wrap: wrap;
  }
 
  #catalog h3 {
@@ -123,14 +123,28 @@ CATALOG SECTION
 }
 
   #catalog .catalog-item {
-   width: 30%;
+   width: 33.3333333%;
+   border-right: 1px solid #ccc;
+   /* border-bottom: 1px solid #ccc; */
    text-align: center;
+   margin-top: 2rem;
+  }
+
+  #catalog .catalog-item:nth-child(3n+3) {
+    border-right: none;
   }
 
   #catalog img {
     max-width: 255px;
     max-height: 340px;
   }
+
+  #catalog .catalog-item__badge a:visited {
+    color: #fff;
+    background: red;
+  }
+
+
 
 
 
@@ -139,11 +153,12 @@ Media Queries
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 
- @media(max-width: 768px) {
+@media(max-width: 768px) {
 
-   /* *******************
+  /* *******************
    SHOWCASE SECTION
    ******************** */
+
   #showcase h1 {
      font-size: 3.5rem;
      letter-spacing: 3px;
@@ -178,4 +193,4 @@ Media Queries
       width: 100%;
     }
 
- }
+ } 
