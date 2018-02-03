@@ -324,12 +324,20 @@ Media Queries
 
    #catalog .catalog-item {
      border-right: none;
+     margin-top: 2rem;
+
+   }
+
+   #catalog h3 {
+     margin-top: 3rem;
+     margin-bottom: 1rem;
    }
  }
 
  @media(min-width: 768px) and (max-width: 1023px) {
    #catalog .catalog-item {
      width: 50%;
+     margin-top: 2rem;
    }
 
    #catalog .catalog-item__badge {
