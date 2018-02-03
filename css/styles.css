@@ -201,7 +201,7 @@ CATALOG SECTION
     display: none;
  }
 
-    #catalog .catalog-item__badge input:checked + label > i.fa.fa-heart{
+    #catalog .catalog-item__badge input:checked label  i.fa.fa-heart{
     font-weight: 900;
     color: #f9688f;
   }
