@@ -340,6 +340,11 @@ Media Queries
      margin-top: 2rem;
    }
 
+   #catalog h3 {
+     margin-top: 4.5rem;
+     margin-bottom: 2.5rem;
+   }
+
    #catalog .catalog-item__badge {
      display: block;
      position: static;
