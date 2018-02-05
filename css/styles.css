@@ -41,7 +41,9 @@ HEADER
 
  header {
    width: 100%;
+   transition: .7s;
  }
+
 
  .header-wrapper {
    height: 60px;
@@ -56,11 +58,29 @@ HEADER
  }
 
  /* Navigation */
+
+ .open-side {
+   display: none;
+ }
+
  nav a {
    text-decoration: none;
    color: #707a7a;
    padding: 1.4rem 1.2rem;
    letter-spacing: 3px;
+ }
+
+ .header-sticky {
+   width: 100%;
+   top: 0;
+   position: sticky;
+   background: rgba(0, 0, 0, .8);
+   transition: .5s;
+   z-index: 99999;
+ }
+
+ .header-sticky a {
+   color: #eee;
  }
 
  nav a:hover {
@@ -73,14 +93,14 @@ HEADER
    height: 100%;
    width: 0;
    position: fixed;
-   z-index: 1;
+   z-index: 10000;
    top: 0;
    right: 0;
    background-color: #111;
-    opacity: 0.9;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: .5s;
+   opacity: 0.9;
+   overflow-x: hidden;
+   padding-top: 60px;
+   transition: .5s;
  }
 
  .side-nav a {
@@ -102,10 +122,6 @@ HEADER
     right: 22px;
     font-size: 2rem;
     margin-right: 50px;
-  }
-
-  #showcase-wrapperId {
-    transition: margin-left .5s;
   }
 
 
@@ -215,7 +231,6 @@ CATALOG SECTION
     right: 0;
     top: 0;
     z-index: -9999;
-
   }
 
   #catalog .catalog-item:hover .active-hover {
@@ -273,15 +288,6 @@ CATALOG SECTION
    padding: 1.5rem 0;
  }
 
-   #catalog .catalog-item__badge input#like {
-    display: none;
- }
-
-    #catalog .catalog-item__badge input:checked + label  i.fa.fa-heart{
-    font-weight: 900;
-    color: #f9688f;
-  }
-
 
 
 /* ==========================
@@ -322,6 +328,32 @@ Media Queries
   /* *******************
    SHOWCASE SECTION
    ******************** */
+
+     #catalog .catalog-item:hover .active-hover {
+       position: static;
+     }
+
+    #catalog .catalog-item__badge {
+      display: block;
+      z-index: 100;
+    }
+
+    #catalog .catalog-item:hover {
+      text-shadow: none;
+    }
+
+    .navbar-list {
+      display: none;
+    }
+
+   .open-side {
+     display: block;
+     margin-right: 32px;
+   }
+
+   #logo {
+     margin-left: 32px;
+   }
 
   #showcase h1 {
      font-size: 3.5rem;

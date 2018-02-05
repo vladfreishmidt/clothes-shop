@@ -1,20 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="612px" height="792px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
-<g id="XMLID_1_">
-	<path id="XMLID_16_" fill="#333031" d="M378.216,187.614c0,0-25.857,24.633-69.768,26.163
-		c-43.911,1.53-75.276-25.551-75.276-25.551L54.468,284.004l71.298,129.591l37.791-20.502v211.293h285.957V393.399l39.321,18.972
-		l68.85-129.285L378.216,187.614z M478.584,383.607l-48.807-25.245v225.369H183.753V356.832l-50.337,26.163l-50.031-91.188
-		l141.219-75.582c19.278,39.321,43.299,59.517,89.964,57.681c49.113-1.989,72.828-57.375,72.828-57.375l140.913,74.358
-		L478.584,383.607z"/>
-	<g id="XMLID_6_">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="612" height="792" enable-background="new 0 0 612 792" xml:space="preserve"><rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="none" stroke="none"/>
+
+<g class="currentLayer" style=""><title>Layer 1</title><g id="XMLID_1_" class="selected" fill="#707a7a" fill-opacity="1">
+	<path id="XMLID_16_" fill="#707a7a" d="M382.72727815246583,188.36587969207764 c0,0 -25.857,24.633 -69.768,26.163 c-43.911,1.53 -75.276,-25.551 -75.276,-25.551 L58.979278152465824,284.75587969207766 l71.298,129.591 l37.791,-20.502 v211.293 h285.957 V394.15087969207764 l39.321,18.972 l68.85,-129.285 L382.72727815246583,188.36587969207764 zM483.0952781524658,384.35887969207766 l-48.807,-25.245 v225.369 H188.2642781524658 V357.58387969207763 l-50.337,26.163 l-50.031,-91.188 l141.219,-75.582 c19.278,39.321 43.299,59.517 89.964,57.681 c49.113,-1.9889999999999999 72.828,-57.375 72.828,-57.375 l140.913,74.358 L483.0952781524658,384.35887969207766 z" fill-opacity="1"/>
+	<g id="XMLID_6_" fill="#707a7a" fill-opacity="1">
 		
-			<polygon id="XMLID_5_" fill="none" stroke="#333031" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-			243.522,461.244 311.052,323.855 378.117,462.331 		"/>
+			<polygon id="XMLID_5_" fill="#707a7a" stroke="#333031" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="248.0332794189453,461.9958620071411 315.56329345703125,324.60688495635986 382.6282958984375,463.0828676223755 " fill-opacity="1"/>
 		
-			<ellipse id="XMLID_4_" fill="none" stroke="#333031" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="310.897" cy="406.91" rx="57.44" ry="54.956"/>
+			<ellipse id="XMLID_4_" fill="#707a7a" stroke="#333031" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="315.40828132629395" cy="407.661883354187" rx="57.439998626708984" ry="54.95600128173828" fill-opacity="1"/>
 	</g>
-</g>
-</svg>
+</g></g></svg>
