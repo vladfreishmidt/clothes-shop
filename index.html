@@ -14,22 +14,47 @@
   <!-- HEADER -->
   <header>
     <div class="header-wrapper container flex">
+
       <div id="logo">
         <a href="index.html"><img src="img/main-logo.svg" alt="Logo"></a>
       </div>
-      <nav>
+
+      <nav class="navbar flex">
+
+        <ul class="navbar-list">
+          <a href="#">Main</a>
+          <a href="#">Categories</a>
+          <a href="#">Orders</a>
+          <a href="#">Account</a>
+          <a href="#">Support</a>
+        </ul>
+        <!-- NAVIGATION MENU FOR MOBILE -->
+        <span class="open-slide">
+          <a href="#" onclick="openSideMenu()">
+            <svg width="30" height="30">
+              <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+              <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+              <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+            </svg>
+          </a>
+        </span>
+
+      </nav>
+
+      <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
         <a href="#">Main</a>
         <a href="#">Categories</a>
         <a href="#">Orders</a>
         <a href="#">Account</a>
         <a href="#">Support</a>
-      </nav>
+      </div>
     </div>
   </header>
 
  <!-- SHOWCASE SECTION -->
   <section id="showcase">
-    <div class="showcase-wrapper container flex ">
+    <div class="showcase-wrapper container flex">
       <h1>hoodies</h1>
       <p>wear something you love today</p>
     </div>
@@ -364,17 +389,18 @@
       <p>Designed and Coded by <a href="#">Vlad Freishmidt</a> &copy; 2018</p>
     </div>
   </footer>
+
   <script>
+  // Slide Menu for Mobile
 
-    function isFacebookApp() {
-      var ua = navigator.userAgent || navigator.vendor || window.opera;
-      return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
-}
-          if (isFacebookApp()) {
-            window.location.replace("intent:google.com/#Intent;scheme=https;package=com.android.chrome;end");
+  function openSideMenu() {
+    document.getElementById('side-menu').style.width = '250px';
+  }
 
-    }
+  function closeSideMenu() {
+    document.getElementById('side-menu').style.width = '0px';
+  }
 
-   </script>
+  </script>
 </body>
 </html>
