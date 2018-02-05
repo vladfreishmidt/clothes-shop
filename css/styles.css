@@ -406,7 +406,7 @@ Media Queries
    }
  }
 
- @media(min-width: 768px) and (max-width: 1023px) {
+ @media(min-width: 760px) and (max-width: 1023px) {
    #catalog .catalog-item {
      width: 50%;
      margin-top: 2rem;
